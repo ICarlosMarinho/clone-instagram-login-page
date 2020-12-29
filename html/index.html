@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="../styles/page.css">
+    <link rel="icon" type="image/png" href="../assets/icons8-instagram-64.png">
+    <title>Instagram</title>
+</head>
+<body>
+  <div id="page-wrapper">
+    <aside id="animation-sidebar">
+      <img class="phone-screen" id="first-phone-screen" src="../assets/first-phone-screen.jpg">
+      <img class="phone-screen" id="second-phone-screen" src="../assets/second-phone-screen.jpg">
+      <img class="phone-screen" id="third-phone-screen" src="../assets/third-phone-screen.jpg">
+      <img class="phone-screen" id="fourth-phone-screen" src="../assets/fourth-phone-screen.jpg">
+    </aside>
+    <main>
+      <div id="login-container">
+        <h1>
+          <img id="instagram-logo" src="../assets/instagram-logo.png" alt="Logo do Instagram">
+        </h1>
+        <form>
+          <input id="user-input" oninput="changeButtonState()" placeholder="Telefone, nome de usuário ou email">
+          <input id="password-input" oninput="changeButtonState()" type="password" placeholder="Senha">
+          <button id="submit-btn" type="submit" disabled>Entrar</button>
+        </form>
+        <section id="splitter">
+          <div class="tiny-line"></div>
+          <span>OU</span>
+          <div class="tiny-line"></div>
+        </section>
+        <a id="facebook-login-ref" href="#">Entrar com o Facebook</a>
+        <a id="forgot-pass-ref" href="#">Esqueceu a senha?</a>
+      </div>
+      <div id="register-container">
+        <span>Não tem uma conta?</span>
+        <a href="#">Cadastre-se</a>
+      </div>
+      <div id="get-app-container">
+        <span>Obtenha o aplicativo.</span>
+        <div id="img-wrapper">
+          <a href="#">
+            <img class="get-app-img" src="../assets/app-store-icon.png" alt="Link para o App Store">
+          </a>
+          <a href="#">
+            <img class="get-app-img" src="../assets/google-play-icon.png" alt="Link para o Googl Play">
+          </a>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <ul id="navbar">
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Carreiras</a></li>
+        <li><a href="#">Ajuda</a></li>
+        <li><a href="#">API</a></li>
+        <li><a href="#">Privacidade</a></li>
+        <li><a href="#">Termos</a></li>
+        <li><a href="#">Contas mais relevantes</a></li>
+        <li><a href="#">Hashtags</a></li>
+        <li><a href="#">Localizações</a></li>
+        <li><a href="#">Beleza</a></li>
+        <li><a href="#">Dança e apresentação</a></li>
+        <li><a href="#">Fitness</a></li>
+        <li><a href="#">Comida e bebida</a></li>
+        <li><a href="#">Casa e jardim</a></li>
+        <li><a href="#">Música</a></li>
+        <li><a href="#">Artes visuais</a></li>
+      </ul>
+    </footer>
+  </div>
+  <script type="text/javascript" src="../scripts/main.js"></script>
+</body>
+</html>
